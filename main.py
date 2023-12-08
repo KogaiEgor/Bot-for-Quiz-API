@@ -9,6 +9,7 @@ async def main() -> None:
 
     bot = Bot(token)
     dp = Dispatcher()
+    dp.bot = bot
 
     dp.include_router(user_handlers.router)
 
